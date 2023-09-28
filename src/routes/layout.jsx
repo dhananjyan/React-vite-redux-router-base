@@ -1,21 +1,17 @@
 import { Outlet, Link } from "react-router-dom";
+import Header from "../components/common/Header/Header";
+
+import cx from "classnames"
+import s from "../assets/scss/routes/Layout.module.scss";
+
 
 export default function Layout() {
     return (
-        <div>
-            sidebar
-            header
-            footer
-
-            <ul>
-                <li>
-                    <Link to={`/contacts/1`}>Your Name</Link>
-                </li>
-                <li>
-                    <Link to={`/contacts/2`}>Your Friend</Link>
-                </li>
-            </ul>
-            <Outlet />
+        <div className={cx(s.layout)}>
+            <Header />
+            <div>
+                <Outlet />
+            </div>
         </div>
     )
 }

@@ -1,0 +1,29 @@
+@import "./fonts.scss";
+@import "./variables.scss";
+@import "./mixins.scss";
+
+$myColors: (
+  "blue1":$blue1,
+  "blue-light":$blue-light,
+  "red":$red,
+  "light-grey":$light-grey,
+  "black":$black,
+  "white":$white,
+  "white1":$white1,
+);
+
+@each $name, $colors in $myColors {
+  $index: index($myColors, $colors);
+
+  .text-#{$name} {
+    color: $colors !important;
+  }
+
+  .bg-#{$name} {
+    background-color: $colors;
+  }
+
+  .bc-#{$name} {
+    border-color: $colors !important;
+  }
+}
