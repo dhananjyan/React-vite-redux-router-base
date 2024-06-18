@@ -1,0 +1,31 @@
+@import "../../assets/scss/abstracts";
+
+
+.slideContainer {
+    display: flex;
+    width: 100%;
+    overflow: auto;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    // justify-content: space-between;
+    border-bottom: 1px solid $grey;
+    max-width: 95vw;
+    font-weight: 400;
+
+    // ::-webkit-scrollbar {
+    //     display: none;
+    // }
+
+    .item {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+
+        &:hover,
+        &.highlight {
+            border-bottom: 3px solid $green;
+            font-weight: 600;
+        }
+
+    }
+}

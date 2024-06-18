@@ -1,0 +1,88 @@
+@import "../../assets/scss/abstracts";
+
+
+.layout {
+    .header {
+        padding-bottom: 9px;
+        border-bottom: 1px solid #DCDCDE;
+        margin-bottom: 8px;
+
+        .productTitle {
+            color: rgba(16, 16, 18, 1);
+
+        }
+    }
+
+    .imgContainer {
+        height: 48px;
+        width: 48px;
+        position: relative;
+        overflow: hidden;
+        border-radius: 12px;
+
+        img {
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+
+    .productListContainer {
+        border: 1px solid $grey2;
+        border-radius: 6px;
+        padding: 4px;
+        border-radius: 5px;
+        overflow: hidden;
+
+        .cardItem {
+            display: grid;
+            grid-template-columns: 1fr auto;
+            grid-template-rows: 1fr;
+            // border-radius: 5px;
+
+            &.mustShellItem {
+                background: linear-gradient(90.07deg, #FDF2E5 0.78%, rgba(253, 242, 229, 0.791667) 72.54%, rgba(253, 242, 229, 0) 97.76%);
+
+
+                .flagName {
+                    color: rgba(55, 113, 195, 1);
+
+                }
+            }
+
+
+
+            &.recommendItem {
+                // background: linear-gradient(90.07deg, #FDF2E5 0.78%, rgba(253, 242, 229, 0.791667) 97.76%);
+            }
+
+
+
+            &.schemeItem {
+                background: linear-gradient(90.07deg, #EEF5FC 0.78%, rgba(238, 245, 252, 0.745) 66.72%, rgba(238, 245, 252, 0) 97.76%);
+
+                .flagName {
+                    color: rgba(55, 113, 195, 1);
+
+                }
+            }
+
+            .btnContainer {
+                display: flex;
+                gap: 4px;
+                align-items: end;
+
+
+                @include media-breakpoint-mobile {
+                    flex-direction: column;
+                }
+
+            }
+
+        }
+
+
+    }
+
+}

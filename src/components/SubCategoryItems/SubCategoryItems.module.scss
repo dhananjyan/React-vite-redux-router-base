@@ -1,0 +1,18 @@
+@import "../../assets//scss/abstracts";
+
+.bakeryItemLayout {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(4, 25%);
+    grid-auto-rows: min-content;
+    gap: 8px;
+
+    @include media-breakpoint-tab {
+        grid-template-columns: repeat(3, 33.3%);
+    }
+
+    @include media-breakpoint-mobile {
+        grid-template-columns: 1fr;
+        // background-color: red;
+    }
+}

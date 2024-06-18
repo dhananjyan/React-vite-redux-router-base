@@ -1,0 +1,83 @@
+@import "../../assets/scss/abstracts";
+
+.layout {
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100dvw;
+    height: 100dvh;
+    overflow: hidden;
+    background-color: rgba(16, 16, 18, 0.7);
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(1px);
+
+    .modal {
+        height: 100%;
+        width: 100%;
+        // background-color: red;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .modalContent {
+            background-color: white;
+            padding: 16px;
+            border-radius: 16px;
+            width: 758px;
+            max-height: 80%;
+            position: relative;
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr;
+            // height: 100%;
+
+            .closeBtnContainer {
+                // display: none;
+                position: absolute;
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                top: -30px;
+                left: 0;
+                // background-color: white;
+
+                .closeBtn {
+                    background-color: white;
+                    width: 20px;
+                    height: 20px;
+                    border-radius: 50%;
+                    // aspect-ratio: 1/1;
+                    padding-bottom: 2px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+            }
+        }
+    }
+
+    @include media-breakpoint-tab {
+        .modal {
+            .modalContent {
+                width: 580px;
+            }
+        }
+    }
+
+
+    @include media-breakpoint-mobile {
+        .modal {
+            align-items: flex-end;
+
+            .modalContent {
+                border-bottom-left-radius: 0;
+                border-bottom-right-radius: 0;
+                width: 100dvw;
+                // height: 85%;
+                max-height: 85%;
+            }
+        }
+    }
+
+}

@@ -1,0 +1,22 @@
+@import "../../assets/scss/abstracts";
+
+
+.layout {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    overflow: auto;
+
+    .header {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 8px;
+        border-bottom: 1px solid #DCDCDE;
+    }
+
+    .main {
+        height: 100%;
+        overflow: auto;
+        padding: 8px;
+    }
+}

@@ -10,20 +10,120 @@ $myColors: (
   "black":$black,
   "white":$white,
   "white1":$white1,
+  "green": $green,
+  "grey1": $grey1,
+  "orange": $orange,
+  "orange2": $orange2
 );
 
 @each $name, $colors in $myColors {
   $index: index($myColors, $colors);
 
-  .text-#{$name} {
+  .text_#{$name} {
     color: $colors !important;
   }
 
-  .bg-#{$name} {
+  .bg_#{$name} {
     background-color: $colors;
   }
 
-  .bc-#{$name} {
+  .bc_#{$name} {
     border-color: $colors !important;
   }
+}
+
+@for $i from 1 through 50 {
+
+  .fs_#{$i} {
+    font-size: #{$i}px !important;
+  }
+
+  .gap_#{$i} {
+    gap: #{$i}px !important;
+  }
+
+  .p_#{$i} {
+    padding: #{$i}px !important;
+  }
+  .pb_#{$i} {
+    padding-bottom: #{$i}px !important;
+  }
+
+  .pl_#{$i} {
+    padding-left: #{$i}px !important;
+  }
+
+  .pr_#{$i} {
+    padding-right: #{$i}px !important;
+  }
+
+  .pt_#{$i} {
+    padding-top: #{$i}px !important;
+  }
+
+  .px_#{$i} {
+    padding-right: #{$i}px !important;
+    padding-left: #{$i}px !important;
+  }
+
+  .py_#{$i} {
+    padding-top: #{$i}px !important;
+    padding-bottom: #{$i}px !important;
+  }
+
+
+  .mb_#{$i} {
+    margin-bottom: #{$i}px !important;
+  }
+
+  .ml_#{$i} {
+    margin-left: #{$i}px !important;
+  }
+
+  .mr_#{$i} {
+    margin-right: #{$i}px !important;
+  }
+
+  .mt_#{$i} {
+    margin-top: #{$i}px !important;
+  }
+
+  .mx_#{$i} {
+    margin-right: #{$i}px !important;
+    margin-left: #{$i}px !important;
+  }
+
+  .my_#{$i} {
+    margin-top: #{$i}px !important;
+    margin-bottom: #{$i}px !important;
+  }
+}
+
+// Font Weight
+$myFontWeight: (
+  "400": 400,
+  "500":500,
+  "600": 600,
+  "700": 700,
+  "800": 800,
+  "900": 900,
+);
+
+@each $name, $fw in $myFontWeight {
+  $index: index($myFontWeight, $fw);
+
+  .fw_#{$name} {
+    font-weight: $fw !important;
+  }
+}
+
+.fontMedium {
+  font-family: "Montserrat-Medium";
+}
+.fontBold {
+  font-family: "Montserrat-Bold";
+}
+
+.btn {
+  @include btn-common
 }

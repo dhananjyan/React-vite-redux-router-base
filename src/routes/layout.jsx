@@ -9,9 +9,7 @@ export default function Layout() {
     return (
         <div className={cx(s.layout)}>
             <Header />
-            <div>
-                <Outlet />
-            </div>
+            <Outlet />
         </div>
     )
 }

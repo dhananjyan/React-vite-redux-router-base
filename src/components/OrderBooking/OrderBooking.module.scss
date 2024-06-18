@@ -1,0 +1,23 @@
+@import "../../assets/scss/abstracts";
+
+.layout {
+    height: 100%;
+    overflow: auto;
+    position: relative;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto 1fr auto;
+
+    .categorySlideSection {
+        background-color: $white;
+    }
+
+    .orderItemSection {
+        height: 100%;
+        overflow: auto;
+    }
+
+    .footerSection {
+        // background-color: red;
+    }
+}

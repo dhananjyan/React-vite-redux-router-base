@@ -1,5 +1,9 @@
-@import "./common.scss";
 @import "./fonts.scss";
 @import "./functions.scss";
 @import "./mixins.scss";
 @import "./variables.scss";
+@import "./common.scss";
+
+* {
+    font-family: "Montserrat";
+}

@@ -1,0 +1,18 @@
+@import "../../../assets/scss/abstracts";
+
+
+.footer {
+    background-color: $green;
+    margin-top: 16px;
+    box-shadow: 0px 22px 36px 0px rgba(141, 141, 141, 0.25);
+    border-radius: 12px;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 12px;
+    padding: 8px;
+    color: white;
+
+    .amountSection {
+        border-left: 1px solid white;
+    }
+}

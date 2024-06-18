@@ -1,0 +1,23 @@
+@import "../../assets/scss/abstracts";
+
+.layout {
+    background-color: $green;
+    padding: 12px 0;
+
+    button {
+        background-color: rgba(215, 211, 235, 0.5);
+        border: 1px solid rgb(216, 216, 216);
+        padding: 12px 60px;
+        border-radius: 8px;
+        color: white;
+        display: flex;
+        align-items: center;
+    }
+
+
+    @include media-breakpoint-mobile {
+        button {
+            padding: 4px 12px;
+        }
+    }
+}

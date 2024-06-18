@@ -1,0 +1,38 @@
+@import "../../assets/scss/abstracts";
+
+
+.layout {
+
+    .imgContainer {
+        height: 287px;
+        width: 100%;
+        position: relative;
+        overflow: hidden;
+        border-radius: 12px;
+
+        img {
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+
+    }
+
+    .desc {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        line-clamp: 3;
+        -webkit-box-orient: vertical;
+        text-align: justify;
+    }
+
+    @include media-breakpoint-tab {
+        .desc {
+            -webkit-line-clamp: 4;
+            line-clamp: 4;
+        }
+    }
+}

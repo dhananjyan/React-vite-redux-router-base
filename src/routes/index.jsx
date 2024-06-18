@@ -1,6 +1,8 @@
 import ErrorPage from "../error-page";
 import HomePage from "./home";
 import Layout from "./layout";
+import OrderBooking from "./OrderBooking";
+import OrderSummary from "./OrderSummary";
 
 const routes = [
     {
@@ -13,8 +15,12 @@ const routes = [
                 element: <HomePage />
             },
             {
-                path: "/contacts/:id",
-                element: <div>Contact</div>
+                path: "/order-booking",
+                element: <OrderBooking />
+            },
+            {
+                path: "/order-booking/summary",
+                element: <OrderSummary />
             }
         ]
     },

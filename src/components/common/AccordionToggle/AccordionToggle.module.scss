@@ -1,0 +1,9 @@
+@import "../../../assets/scss/abstracts";
+
+.collapseBtn {
+    transition: transform 400ms ease-in-out;
+}
+
+.rotate {
+    transform: rotate(180deg);
+}

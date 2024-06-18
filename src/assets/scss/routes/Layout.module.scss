@@ -2,10 +2,10 @@
 
 .layout {
     display: grid;
-    grid-template-columns: auto;
+    grid-template-columns: 1fr;
     grid-template-rows: auto 1fr;
-    min-height: 100vh;
+    height: 100vh;
+    height: 100dvh;
     width: 100vw;
-    overflow-y: auto;
-    overflow-x: hidden;
+    // overflow: auto;
 }
