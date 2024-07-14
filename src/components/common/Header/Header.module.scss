@@ -1,11 +1,16 @@
 @import "../../../assets//scss/abstracts";
-
 .header {
-    background: #FFF;
+    background: $blue1;
     box-shadow: 0px 2px 16px 0px rgba(190, 190, 190, 0.25);
     display: flex;
-    padding: 8px 16px;
+    // padding: 8px 16px;
     align-items: center;
-    gap: 12px;
     z-index: 2;
+    .logo {
+        padding: 12.5px 24px;
+    }
+    .divider {
+        height: 42%;
+        border-right: 1px;
+    }
 }

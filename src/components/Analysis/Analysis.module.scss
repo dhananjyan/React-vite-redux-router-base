@@ -1,0 +1,15 @@
+@import "../../assets/scss/abstracts";
+.layout {
+    display: grid;
+    height: 100%;
+    grid-template-rows: auto 1fr;
+    grid-template-columns: auto 1fr 1fr;
+    .sidebar {
+        grid-row: span 2;
+        height: 100%;
+        overflow: auto;
+    }
+    .topbar {
+        grid-column: span 2;
+    }
+}

@@ -1,0 +1,32 @@
+@import "../../../assets/scss/abstracts";
+.layout {
+    display: grid;
+    grid-template-columns: 1fr;
+    height: 100%;
+    grid-template-rows: auto 1fr auto;
+    border-right: 1px solid #BFBFBF;
+    .header {
+        display: flex;
+        padding: 13px 16px;
+        background-color: $blue-light;
+        align-items: center;
+        gap: 10px;
+        border-bottom: 1px solid #BFBFBF;
+    }
+    .footer {
+        padding: 15px;
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        background-color: $light-grey;
+        border-top: 1px solid #BFBFBF;
+        button {
+            &.primary {
+                background: rgba(235, 47, 150, 1);
+                border: 1px solid rgba(0, 0, 0, 0.2);
+                color: white;
+                font-weight: 600;
+            }
+        }
+    }
+}
